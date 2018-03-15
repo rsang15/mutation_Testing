@@ -1,6 +1,6 @@
-#Thu Mar 15 14:33:29 EDT 2018
+#Thu Mar 15 18:54:51 EDT 2018
 GRADLE_NATURES=org.eclipse.jdt.core.javanature
-eclipse.preferences.version=1
 GRADLE_FILTERS=1.0-projectRelativePath-matches-false-false-build,1.0-projectRelativePath-matches-false-false-.gradle
+eclipse.preferences.version=1
 GRADLE_BUILD_COMMANDS=org.eclipse.jdt.core.javabuilder
 connection.project.dir=
