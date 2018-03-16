@@ -27,9 +27,14 @@ public class RomanConverterTest {
 	@Test(expected = Exception.class)
 	public void testToRomanb3(){
 		//greater than 0
-		romanConverter.toRoman(4002);
+		romanConverter.toRoman(4000);
 	}
 	
+	@Test(expected = Exception.class)
+	public void testToRomanb31(){
+		//greater than 0
+		romanConverter.toRoman(0);
+	}
 	@Test
 	public void testFromRomanb1() {
 		assertEquals( 5, romanConverter.fromRoman("V"));
@@ -75,5 +80,22 @@ public class RomanConverterTest {
 	public void testFromRomanb9(){
 		//test null
 		romanConverter.fromRoman(null);
+	}
+	
+	@Test
+	public void testFromRomanAug1() {
+		assertEquals( 1, romanConverter.fromRoman("I"));
+	}
+	
+	@Test(expected = Exception.class)
+	public void testFromRomanAug2(){
+		//test null
+		romanConverter.fromRoman("MMMM");
+	}
+	
+	@Test
+	public void testFromRomanAug3(){
+		//test null
+		assertEquals( 3999, romanConverter.fromRoman("MMMCMXCIX"));
 	}
 }
